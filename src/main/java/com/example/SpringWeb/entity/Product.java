@@ -58,4 +58,15 @@ public class Product {
     public void setImage(String image) {
         this.image = image;
     }
+
+    public Product() {
+    }
+
+    public Product(int id, String name, int price, String description, String image) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.image = image;
+    }
 }

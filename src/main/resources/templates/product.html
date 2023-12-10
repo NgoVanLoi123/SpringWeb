@@ -64,7 +64,8 @@
           <td th:text="${sp.description}"></td>
           <td th:text="${sp.image}"></td>
           <td>
-            <img src="data:image/jpg,${sv.image}" style="width: 10px; height: 10px;">
+            <img src="data:image/jpeg;base64,${sp.image}" style="width: 50px; height: 50px;">
+
           </td>
           <td>
             <a class="btn btn-primary btn-sm update-product-modal-open" th:attr="product-id=${sp.id}">
